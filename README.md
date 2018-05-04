@@ -1,14 +1,24 @@
 # wolfpacs
 DICOM PACS query and storage
 
-#instal virtual env
-pip install pipenv
+# Setup Virtual Environment
+
+Pipenv handles dependencies in the python project, first install it. 
+
+```
+pip install pipenv 
 pipenv install
+```
 
-#run the virtual env
-pipenv shell
+To add packages in dependencies use the pipenv command instead of pip.
 
-#to add packages to virtual env
+```
 pipenv install <package_name>
+```
 
+Finally, to  run the virtual environment 
+
+```
+pipenv shell
+```
 
