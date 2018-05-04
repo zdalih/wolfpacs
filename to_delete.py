@@ -1,14 +1,14 @@
 import pypx
 
 pacs_settings = {
-  'executable': '/usr/local/bin/echoscu',
-  'aec': 'ORTHANC',
+  'executable': '/usr/local/bin/px-find',
+  'aec': 'CHIPS',
   'aet': 'CHIPS',
-  'server_ip': '127.0.0.1',
+  'server_ip': '192.168.0.1',
   'server_port': '4242',
 }
 
-output = pypx.echo(pacs_settings)
+output = pypx.find(pacs_settings)
 print(output)
 
 # output:
