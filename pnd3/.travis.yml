@@ -1,0 +1,32 @@
+language: python
+
+# Supported python versions
+python:
+    - 2.7
+    - 3.4
+    - 3.5
+    - 3.6
+
+# Command to install dependencies
+before_script:
+    - wget https://github.com/pydicom/pydicom/archive/master.tar.gz -O /tmp/pydicom.tar.gz
+    - tar xzf /tmp/pydicom.tar.gz
+    - pip install $PWD/pydicom-master
+
+install:
+    - pip install codecov
+    - pip install coverage
+    - pip install pytest-cov
+    - pip install pytest
+    - pip install asv
+    - python setup.py install
+
+# Command to run tests
+script:
+    - pytest --cov=pynetdicom3 --ignore=pydicom-master
+
+after_success:
+    - codecov
+
+notifications:
+    email: false

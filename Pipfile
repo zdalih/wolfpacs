@@ -1,12 +1,12 @@
 [[source]]
-verify_ssl = true
-url = "https://pypi.org/simple"
 name = "pypi"
-
-[requires]
-python_version = "2.7"
+url = "https://pypi.org/simple"
+verify_ssl = true
 
 [packages]
-pypx = "*"
+pydicom = "*"
 
 [dev-packages]
+
+[requires]
+python_version = "3.5"
