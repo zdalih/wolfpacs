@@ -16,19 +16,19 @@ Must have Python 3.5+
 Pipenv handles dependencies in the python project, first install it. 
 
 ```
-pip install pipenv 
-pipenv install
+sudo pip install pipenv 
+sudo pipenv install
 ```
 
 To add packages in dependencies use the pipenv command instead of pip.
 
 ```
-pipenv install <package_name>
+sudo pipenv install <package_name>
 ```
 
 Finally, to  run the virtual environment 
 
 ```
-pipenv shell
+sudo pipenv shell
 ```
 
